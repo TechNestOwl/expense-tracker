@@ -9,4 +9,65 @@
 // Save expenses to localStorage so data persists even if the page is refreshed.
 // Retrieve and display stored data on page load.
 
+//considering using DOMContentLoaded to ensure all DOMelements are loaded before function fires
 
+
+const expenseForm = document.getElementById('expenseForm');
+const expenseNameInput = document.getElementById('expenseName');
+const expenseAmountInput = document.getElementById('expenseAmount');
+const expensesContainer = document.getElementById('expenses');
+const totalExpensesElement = document.getElementById('total-expenses');
+
+// Initialize expenses array from local storage
+let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+
+// update the UI
+function updateUI() {
+  // Clear current expenses display
+  expensesContainer.innerHTML = '';
+  let total = 0;
+
+  // Render expenses
+  expenses.forEach((expense, index) => {
+    total += expense.amount;
+
+    const expenseItem = document.createElement('div');
+    expenseItem.classList.add('expense-item');
+    expenseItem.innerHTML = `
+      <p>${expense.name}: $${expense.amount}</p>
+      <button onclick="removeExpense(${index})">Remove</button>
+    `;
+    expensesContainer.appendChild(expenseItem);
+  });
+
+  // Update total expenses
+  totalExpensesElement.innerText = total;
+}
+
+// Function to add an expense
+function addExpense(event) {
+  event.preventDefault();
+
+  const name = expenseNameInput.value;
+  const amount = parseFloat(expenseAmountInput.value);
+
+  if (name && amount) {
+    expenses.push({ name, amount });
+    localStorage.setItem('expenses', JSON.stringify(expenses));
+    expenseForm.reset(); // Clear form inputs
+    updateUI(); // Refresh UI
+  }
+}
+
+// Function to remove an expense
+function removeExpense(index) {
+  expenses.splice(index, 1);
+  localStorage.setItem('expenses', JSON.stringify(expenses));
+  updateUI(); // Refresh UI
+}
+
+// Event listener for form submission
+expenseForm.addEventListener('submit', addExpense);
+
+// Initial call to populate UI on load
+updateUI();
