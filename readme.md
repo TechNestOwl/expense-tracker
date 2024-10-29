@@ -13,14 +13,6 @@ The Expense Tracker is a web application for managing personal expenses. Users c
 - **Interactivity**: Filter and sort expenses; clear all expenses option.
 - **Budget Goals**: Set and track custom budget limits.
 
-## Lessons Learned
-
-- Improved JavaScript skills, especially in DOM manipulation and local storage.
-- Gained experience with Chart.js for data visualization.
-- Enhanced CSS for responsive design and usability.
-- Developed problem-solving skills through debugging and user-centered design.
-
-
 ## Screenshots
 ![Expense Tracker Screenshot](./assets/expense_1.png)
 ![Expense Tracker Screenshot](./assets/expense_2.png)
