@@ -8,7 +8,7 @@
   
   body {
     background: 
-      linear-gradient(135deg, #305c67, #c3d9e0), /* Gradient */
+      linear-gradient(135deg, #305c67, #a8c1c9), /* Gradient */
       url("https://www.transparenttextures.com/patterns/axiom-pattern.png"); /* Texture image */
     background-size: cover, 50px;
     background-attachment: fixed;
@@ -100,6 +100,29 @@
     transition: transform 0.3s, box-shadow 0.3s;
     animation: popIn 0.5s ease-out;
   }
+  .secondary-btn {
+    width: 100px; /* Full width for consistency */
+    padding: 12px;
+    background-color: #e7f1f5; /* Light background */
+    color: #333; /* Dark text */
+    font-size: 16px;
+    border: 2px solid #0088cc; /* Border to define the button */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover and click */
+    position: relative; /* Positioning for click effect */
+}
+
+    .secondary-btn:hover {
+        background-color: #c8dbe2; /* Darken background on hover */
+    }
+
+
+
+.secondary-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 136, 204, 0.5); /* Optional focus effect */
+}
   
   .expense-item:hover {
     transform: translateY(-5px);

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 expenseItem.classList.add('expense-item');
                 expenseItem.innerHTML = `
                     <p>${expense.name}: $${expense.amount.toFixed(2)} (${expense.category})</p>
-                    <button id="removeBtn" onclick="removeExpense(${index})">Remove</button>
+                    <button class="secondary-btn" onclick="removeExpense(${index})">Remove</button>
                 `;
                 expensesContainer.appendChild(expenseItem);
             }
