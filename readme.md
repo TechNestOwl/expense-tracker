@@ -1,4 +1,6 @@
 # Expense Tracker
+![Expense Tracker Screenshot](./assets/expense_1.png)
+![Expense Tracker Screenshot](./assets/expense_2.png)
 
 ## Overview
 
