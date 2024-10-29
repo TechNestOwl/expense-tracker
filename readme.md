@@ -1,6 +1,4 @@
 # Expense Tracker
-![Expense Tracker Screenshot](./assets/expense_1.png)
-![Expense Tracker Screenshot](./assets/expense_2.png)
 
 ## Overview
 
@@ -21,3 +19,8 @@ The Expense Tracker is a web application for managing personal expenses. Users c
 - Gained experience with Chart.js for data visualization.
 - Enhanced CSS for responsive design and usability.
 - Developed problem-solving skills through debugging and user-centered design.
+
+
+## Screenshots
+![Expense Tracker Screenshot](./assets/expense_1.png)
+![Expense Tracker Screenshot](./assets/expense_2.png)
