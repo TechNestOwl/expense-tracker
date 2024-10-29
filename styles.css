@@ -1,0 +1,161 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: 
+      linear-gradient(135deg, #305c67, #c3d9e0), /* Gradient */
+      url("https://www.transparenttextures.com/patterns/axiom-pattern.png"); /* Texture image */
+    background-size: cover, 50px;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #444;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Form Styling */
+  .expense-form {
+    margin: 20px 0;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #0088cc;
+    box-shadow: 0 0 8px rgba(0, 136, 204, 0.2);
+    transform: scale(1.02);
+  }
+  
+  .add-expense-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0088cc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .add-expense-btn:hover {
+    background-color: #006699;
+    transform: scale(1.05);
+  }
+  
+  /* Expense List Styling */
+  .expense-list {
+    margin-top: 20px;
+  }
+  
+  #expenses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #eaf6fb;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 136, 204, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: popIn 0.5s ease-out;
+  }
+  
+  .expense-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 136, 204, 0.2);
+  }
+  
+  .expense-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Summary Section */
+  .summary {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  #total-expenses {
+    font-size: 20px;
+    color: #0088cc;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
