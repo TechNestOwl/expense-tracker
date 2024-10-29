@@ -31,6 +31,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     animation: fadeIn 1.2s ease-in-out;
+    margin:30px;
   }
   
   h1, h2 {
@@ -116,8 +117,6 @@
     .secondary-btn:hover {
         background-color: #c8dbe2; /* Darken background on hover */
     }
-
-
 
 .secondary-btn:focus {
     outline: none; /* Remove default outline */
