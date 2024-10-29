@@ -64,7 +64,7 @@
   .add-expense-btn {
     width: 100%;
     padding: 12px;
-    background-color: #0088cc;
+    background-color: #3b6c79;
     color: white;
     font-size: 16px;
     border: none;
@@ -74,7 +74,7 @@
   }
   
   .add-expense-btn:hover {
-    background-color: #006699;
+    background-color: #46818f;
     transform: scale(1.05);
   }
   
