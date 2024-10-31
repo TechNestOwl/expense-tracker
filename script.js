@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Get DOM elements
+    
+    // DOM elements
     const expenseForm = document.getElementById('expenseForm');
     const expenseNameInput = document.getElementById('expenseName');
     const expenseAmountInput = document.getElementById('expenseAmount');
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     expenseForm.addEventListener('submit', addExpense);
 
-    // Function to update the UI
+    //  update the UI
     function updateUI(filterCategory = 'All') {
         expensesContainer.innerHTML = '';
         let total = 0;
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to remove an expense
+    // remove an expense
     window.removeExpense = function(index) {
         expenses.splice(index, 1);
         localStorage.setItem('expenses', JSON.stringify(expenses));

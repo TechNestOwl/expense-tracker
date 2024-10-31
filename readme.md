@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Expense Tracker is a web application for managing personal expenses. Users can add, view, and categorize expenses, providing insights into spending habits through visualizations.
+The Expense Tracker is a web application built with AI tools for managing personal expenses. Users can add, view, and categorize expenses, providing insights into spending habits through visualizations.
 
 ## Features
 
