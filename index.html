@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
+        <!-- expense form -->
         <form id="expenseForm" class="expense-form">
             <input type="text" id="expenseName" placeholder="Expense Name" required>
             <input type="number" id="expenseAmount" placeholder="Amount" required>
@@ -41,13 +42,21 @@
             </select>
             <button class="secondary-btn" id="clearAll">Clear All Expenses</button>
         </div>
-
+             <!-- Financial Goals Form -->
+        <form id="goalForm">
+            <h4>Financial Goals</h4>
+            <input type="number" id="goalAmount" placeholder="Goal Amount" required>
+            <input type="date" id="goalDate" placeholder="Target Date" required>
+            <button type="submit" class="secondary-btn">Set Financial Goal</button>
+        </form>
+        <!-- Need to adjust flexbox spacing to give items more room -->
         <div class="expense-list">
             <h2>Expenses</h2>
             <div id="expenses"></div>
         </div>
 
         <canvas id="expenseChart" style="margin-top: 20px;"></canvas>
+       
     </div>
     <script src="script.js"></script>
 </body>
