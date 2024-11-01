@@ -131,7 +131,7 @@
 }
 
 .secondary-btn:hover {
-    color: rgb(9, 1, 1);
+    color:#305c67;
     border-color: #4b5563;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -139,6 +139,7 @@
 .secondary-btn:hover::before {
     left: 0;
     transform: skew(-15deg);
+    color:#3b6c79
 }
 
 .secondary-btn:active {
